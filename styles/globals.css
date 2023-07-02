@@ -40,6 +40,18 @@
     -webkit-animation: 5s ease-in-out 0s infinite normal none running bHafHd;
 }
 
+.animtext2{
+    display: inline-block;
+    background-position-x: 0px;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(255, 153, 0);
+    background-image: linear-gradient(90deg, rgb(255, 0, 184) 0%, rgb(255, 153, 0) 50%, rgb(255, 0, 184) 100%);
+    animation: 5s ease-in-out 0s infinite normal none running bHafHd;
+    -webkit-animation: 5s ease-in-out 0s infinite normal none running bHafHd;
+}
+
 @keyframes bHafHd {
     0% {
         background-position-x: 0px;
@@ -55,7 +67,7 @@
 }
 
 /* feature*/
-.card1{
+.card1,.card2, .card3{
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -73,21 +85,56 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.layer1{
+.card1 .layer1{
     background: url(/images/card-1-1.png);
 
 }
-.layer2{
+.card1 .layer2{
     background: url(/images/card-1-2.png);
 }
-.layer3{
+.card1 .layer3{
     background: url(/images/card-1-3.png);
 }
+
+
+
+/* card 2 */
+.card2 figure > div.layer1, .card2 figure > div.layer2, .card2 figure > div.layer3, .card2 figure > div.layer4{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card2 .layer1{
+    background: url(/images/card-2-1.png);
+}
+.card2 .layer2{
+    background: url(/images/card-2-2.png);
+}
+.card2 .layer3{
+    background: url(/images/card-2-3.png);
+}
+.card2 .layer4{
+    background: url(/images/card-2-4.png);
+}
+/* card 3 */
+.card3 figure > div.layer4{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card3 .layer4{
+    background: url(/images/card-3-1.png);
+}
+
+
 
 .card1 figure > div, .card2 figure > div, .card3 figure > div {
     position: absolute;
     inset: 0px;
 }
+
 
 /* media query */
 @media screen and (max-width: 1024px){
@@ -103,4 +150,40 @@
     .background{
         background-image: url(https://cdn.arc.dev/images/dev-landing/new/bg-middle-mobile.png), url(https://cdn.arc.dev/images/dev-landing/new/bg-left.png), url(https://cdn.arc.dev/images/dev-landing/new/bg-right.png);
     }
+}
+
+
+/*  work section */
+
+.common .first{
+    border-image-slice: 1;
+    border-width: 0px 0px 0px 1px;
+    border-image-source: linear-gradient(rgb(215, 18, 18) 0%, rgb(212, 9, 9) 18px);
+
+  
+}
+
+.common{
+    border-left: 1px solid rgb(178, 178, 178);
+    /* margin-top: 20px; */
+    position: relative;
+}
+.common:before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 47px;
+    left: -30px;
+    background: white;
+}
+.common:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 73px;
+    left: -4px;
+    background: rgb(18, 141, 255);
+    border-radius: 50%;
 }

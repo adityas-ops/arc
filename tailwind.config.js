@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       fontFamily:{
         "Inter":['Inter', 'sans-serif']
+      },
+      colors:{
+        "blue":"rgb(7, 90, 255)"
       }
     },
   },
