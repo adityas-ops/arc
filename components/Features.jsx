@@ -17,10 +17,10 @@ function Features() {
          <p className='md:text-[1.375rem] text-[1.125rem] font-[500] font-Inter'>Remote jobs at fast-growing tech companies and startups</p>
          </div>
         </div>
-        <div className='lg:px-[7.5rem] md:px-[3.25rem] px-[1.75rem]'>
+        <div className='lg:px-[7.5rem] md:px-[3.25rem] px-0'>
         {/* card start */}
-        <div className='bg-[#FFFFFF] md:p-[6.75rem] p-[3.75rem] lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14'>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-20'>
+        <div className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx-[1rem] rounded-[12px] shadow-xl  mt-14'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
               <div className=' font-Inter'>
                 <h3 className='text-[1.25rem] font-[700]'>
                   <Animtext title="1. Effortless"/>
@@ -52,8 +52,8 @@ function Features() {
         </div>
         {/* card end */}
         {/* card start */}
-        <div className='bg-[#FFFFFF] md:p-[6.75rem] p-[3.75rem] lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14'>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-20'>
+        <div className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 '>
               {/* images purpose */}
               <div className='w-fit md:order-1 order-2'>
               <div className='card2'>
@@ -86,8 +86,8 @@ function Features() {
         </div>
         {/* card end */}
          {/* card start */}
-         <div className='bg-[#FFFFFF] md:p-[6.75rem] p-[3.75rem] lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14'>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-20'>
+         <div className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
               <div className=' font-Inter'>
                 <h3 className='text-[1.25rem] font-[700]'>
                   <Animtext title="3. Personal Support"/>

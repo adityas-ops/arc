@@ -105,7 +105,7 @@ function Work() {
             </div>
           </div>
           {/* end */}
-          <div className='w-full h-full py-20 flex items-center justify-center'>
+          <div className='w-full h-full pt-20 flex items-center justify-center'>
           <Link href="#"
           className=' w-auto bg-blue w-min-[70px] font-Inter font-[500] text-white border-[1px] border-blue rounded-[4px] py-[15px] px-[31px]'
            >
