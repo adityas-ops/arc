@@ -1,5 +1,14 @@
+"use client";
 import '@/styles/globals.css'
-import 'flowbite';
+import { ThemeProvider } from "@material-tailwind/react";
+
+
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+  <>
+    <ThemeProvider>
+    <Component {...pageProps} />
+    </ThemeProvider>
+  </>
+  )
 }
