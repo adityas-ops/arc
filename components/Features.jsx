@@ -1,8 +1,15 @@
 import React from 'react'
 import Animtext from './elements/Animtext'
 import Link from 'next/link'
+import { useEffect, useRef } from 'react';
 
 function Features() {
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    // Add the 'animate__animated' class to start the animation
+    divRef.current.classList.add('animate__animated');
+  }, []);
   return (
     <>
       <div className='bg-[#F7F7F7] w-full h-full flex justify-center items-center flex-col'>
@@ -19,7 +26,7 @@ function Features() {
         </div>
         <div className='lg:px-[7.5rem] md:px-[3.25rem] px-0'>
         {/* card start */}
-        <div className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx-[1rem] rounded-[12px] shadow-xl  mt-14'>
+        <div ref={divRef}  className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx-[1rem] rounded-[12px] shadow-xl  mt-14  animate__fadeInUp '>
             <div className='grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
               <div className=' font-Inter'>
                 <h3 className='text-[1.25rem] font-[700]'>
@@ -52,7 +59,7 @@ function Features() {
         </div>
         {/* card end */}
         {/* card start */}
-        <div className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14'>
+        <div ref={divRef}  className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14  animate__fadeInUp animate__slow'>
             <div className='grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 '>
               {/* images purpose */}
               <div className='w-fit md:order-1 order-2'>
@@ -86,7 +93,7 @@ function Features() {
         </div>
         {/* card end */}
          {/* card start */}
-         <div className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14'>
+         <div ref={divRef}  className='bg-[#FFFFFF] md:p-[6.75rem] p-4 lg:mx-[4rem] md:mx-[2rem] mx:mx-[1rem] rounded-[12px] shadow-xl mx-4 mt-14  animate__fadeInUp animate__slower'>
             <div className='grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
               <div className=' font-Inter'>
                 <h3 className='text-[1.25rem] font-[700]'>

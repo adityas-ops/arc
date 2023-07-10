@@ -11,12 +11,12 @@ function Hero() {
       <div className=" w-full h-full bg-black ">
         <div className="background">
           <div className="w-full h-full flex items-center flex-col  justify-center text-white">
-            <h1 className="lg:text-[3.375rem] pt-8 text-[2.375rem]  md:text-[2.875rem] font-[700] font-Inter text-center leading-[59px]">
+            <h1 className="lg:text-[3.375rem] pt-8 text-[2.375rem]  md:text-[2.875rem] font-[700] font-Inter text-center leading-[59px] animate__animated animate__fadeInUp ">
               Radically different <Animtext title="remote job search" /> where
               companies apply to you
             </h1>
-            <div className="w-full h-fit flex md:pt-[59px] pt-[26px]  justify-center items-center">
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+            <div className="w-full h-fit flex md:pt-[59px] pt-[26px]  justify-center items-center animate__animated animate__fadeInUp animate__slow">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-4 ">
                 <Link
                   href="#"
                   className="py-[15px] px-[2rem] bg-white text-black font-Inter font-[700] rounded-[5px]"
